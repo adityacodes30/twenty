@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { IconSettings } from 'twenty-ui';
 
+import { SettingsAccountsCalendarDisplaySettings } from '@/settings/accounts/components/SettingsAccountsCalendarDisplaySettings';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
 import { ChangePassword } from '@/settings/profile/components/ChangePassword';
 import { DeleteAccount } from '@/settings/profile/components/DeleteAccount';
@@ -34,6 +35,13 @@ export const SettingsProfile = () => (
           description="The email associated to your account"
         />
         <EmailField />
+      </Section>
+      <Section>
+        <H2Title
+          title="Display"
+          description="Configure how we should display your events in your calendar"
+        />
+        <SettingsAccountsCalendarDisplaySettings />
       </Section>
       <Section>
         <ChangePassword />

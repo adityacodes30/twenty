@@ -10,7 +10,6 @@ import { currentWorkspaceMemberState } from '@/auth/states/currentWorkspaceMembe
 import { CoreObjectNameSingular } from '@/object-metadata/types/CoreObjectNameSingular';
 import { useFindManyRecords } from '@/object-record/hooks/useFindManyRecords';
 import { SettingsAccountsCalendarChannelsListCard } from '@/settings/accounts/components/SettingsAccountsCalendarChannelsListCard';
-import { SettingsAccountsCalendarDisplaySettings } from '@/settings/accounts/components/SettingsAccountsCalendarDisplaySettings';
 import { SettingsPageContainer } from '@/settings/components/SettingsPageContainer';
 import { getSettingsPagePath } from '@/settings/utils/getSettingsPagePath';
 import { SettingsPath } from '@/types/SettingsPath';
@@ -103,13 +102,6 @@ export const SettingsAccountsCalendars = () => {
         </Section>
         {!!calendarChannels.length && (
           <>
-            <Section>
-              <H2Title
-                title="Display"
-                description="Configure how we should display your events in your calendar"
-              />
-              <SettingsAccountsCalendarDisplaySettings />
-            </Section>
             <Section>
               <H2Title
                 title="Color code"
